@@ -1,9 +1,7 @@
 """Utilities for post-hoc risk scoring under synthetic and missing-modality shift.
 
 This module pulls together the signal-fusion and evaluation code used in the
-BraTS 2020 robustness monitoring experiments. The aim here is not to mirror the
-notebook cell by cell, but to expose the same workflow through a small set of
-functions that are easier to read and reuse.
+BraTS 2020 robustness monitoring experiments. 
 """
 
 from __future__ import annotations
@@ -564,9 +562,7 @@ def run_full_risk_scoring_pipeline(
     ridge_search: RidgeSearchConfig = RidgeSearchConfig(),
     calibration_k_values: Optional[Iterable[int]] = None,
 ) -> Dict[str, pd.DataFrame]:
-    """Run the core tables used in the notebook.
-
-    This keeps the main entry point simple for a reproduction script:
+    """Run the core tables used.
 
     - build the synthetic-shift table
     - evaluate leave-one-drift-out severity prediction
