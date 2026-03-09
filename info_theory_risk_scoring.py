@@ -4,8 +4,6 @@ This module pulls together the signal-fusion and evaluation code used in the
 BraTS 2020 robustness monitoring experiments. 
 """
 
-from __future__ import annotations
-
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence, Tuple
